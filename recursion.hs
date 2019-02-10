@@ -13,4 +13,10 @@ pow2loop n x i =
         else x
 
 
-main = putStrLn $ repeatString "foo" 4
+fibo :: Integer -> Integer
+fibo 0 = 0
+fibo 1 = 1
+fibo x = fibo (x - 1) + fibo (x - 2)
+
+
+main = print $ fibo 40
